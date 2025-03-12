@@ -60,5 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="SQLScripts\ddl.sql" />
+    <Build Include="SQLScripts\dml.sql" />
   </ItemGroup>
 </Project>
