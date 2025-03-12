@@ -58,4 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="SQLScripts" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="SQLScripts\ddl.sql" />
+  </ItemGroup>
 </Project>
