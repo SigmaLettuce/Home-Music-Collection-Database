@@ -42,4 +42,3 @@ CREATE TABLE Properties.tblShelfInfo (
 	shelfRow INT IDENTITY(1,1) NOT NULL,
 	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageInfo (roomID)
 );
-
