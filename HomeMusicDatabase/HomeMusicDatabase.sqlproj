@@ -59,7 +59,7 @@
     <Folder Include="SQLScripts" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SQLScripts\ddl.sql" />
-    <None Include="SQLScripts\dml.sql" />
+    <None Include="SQLScripts\create.sql" />
+    <None Include="SQLScripts\load.sql" />
   </ItemGroup>
 </Project>

@@ -29,11 +29,11 @@ CREATE TABLE Contents.tblBands (
 CREATE TABLE Properties.tblFormat (
 	formatID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	formatName VARCHAR(10) NOT NULL,
-	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageInfo (roomID),
+	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID),
 	FOREIGN KEY (albumID) REFERENCES Contents.tblAlbums (albumID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Properties.tblStorageInfo (
+CREATE TABLE Properties.tblStorageRoom (
 	roomID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	roomName VARCHAR(20) NOT NULL,
 );
@@ -41,5 +41,5 @@ CREATE TABLE Properties.tblStorageInfo (
 CREATE TABLE Properties.tblShelfInfo (
 	shelfTag CHAR(1) NOT NULL,
 	shelfRow INT IDENTITY(1,1) NOT NULL,
-	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageInfo (roomID) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID) ON DELETE CASCADE ON UPDATE CASCADE
 );
