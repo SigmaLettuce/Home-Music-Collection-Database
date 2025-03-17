@@ -32,3 +32,25 @@ INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, for
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(28, 'Bleach', 'Grunge', '19890615', 4);
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(29, 'Ten', 'Grunge', '19910827', 2);
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(30, 'Vs.', 'Grunge', '19931019', 1);
+
+SET IDENTITY_INSERT Contents.tblAlbums OFF;
+
+SET IDENTITY_INSERT Contents.tblArtists ON;
+
+SET IDENTITY_INSERT Contents.tblArtists OFF;
+
+SET IDENTITY_INSERT Contents.tblBands ON;
+
+SET IDENTITY_INSERT Contents.tblBands OFF;
+
+SET IDENTITY_INSERT Properties.tblFormat ON;
+
+SET IDENTITY_INSERT Properties.tblFormat OFF;
+
+SET IDENTITY_INSERT Properties.tblStorageRoom ON;
+
+SET IDENTITY_INSERT Properties.tblStorageRoom OFF;
+
+SET IDENTITY_INSERT Properties.tblShelfInfo ON;
+
+SET IDENTITY_INSERT Properties.tblShelfInfo OFF;
