@@ -42,7 +42,12 @@ SET IDENTITY_INSERT Contents.tblArtists OFF;
 SET IDENTITY_INSERT Contents.tblBands ON;
 
 INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(1, 'System Of A Down', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(2, 'Linkin Park', 1); 
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(2, 'Linkin Park', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(3, 'Metallica', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(4, 'Slayer', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(5, 'Green Day', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(6, 'Nirvana', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(7, 'Pearl Jam', 1);
 
 SET IDENTITY_INSERT Contents.tblBands OFF;
 

@@ -5,7 +5,16 @@ GO
 CREATE Schema Properties;
 GO
 
-CREATE TABLE Contents.tblAlbums (
+CREATE TABLE Contents.tblSoloAlbums (
+	albumID INT(1) NOT NULL,
+	albumName VARCHAR(255) NOT NULL,
+	genreName VARCHAR(255) NOT NULL,
+	dateOfRelease DATE NOT NULL,
+	FOREIGN KEY (formatID) REFERENCES Properties.tblFormat (formatID) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE TABLE Contents.tblBandAlbums (
 	albumID INT(1) NOT NULL,
 	albumName VARCHAR(255) NOT NULL,
 	genreName VARCHAR(255) NOT NULL,
