@@ -6,7 +6,7 @@ CREATE Schema Properties;
 GO
 
 CREATE TABLE Contents.tblAlbums (
-	albumID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	albumID INT(1) NOT NULL,
 	albumName VARCHAR(255) NOT NULL,
 	genreName VARCHAR(255) NOT NULL,
 	dateOfRelease DATE NOT NULL,
