@@ -56,18 +56,18 @@ SET IDENTITY_INSERT Contents.tblAlbums OFF;
 
 SET IDENTITY_INSERT Contents.tblArtists ON;
 
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(1, 'Justin Timberlake', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(2, 'Usher', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(3, 'Alicia Keys', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(4, 'Kanye West', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(5, 'Christina Augilera', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(6, 'James Blunt', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(7, 'Beyoncé', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(8, 'Avril Lavinge', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(9, 'Lauryn Hill', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(10, 'Aaliyah', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(11, 'Fergie', 1);
-INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(12, 'John Legend', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(1, 'Justin Timberlake', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(2, 'Usher', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(3, 'Alicia Keys', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(4, 'Kanye West', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(5, 'Christina Augilera', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(6, 'James Blunt', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(7, 'Beyoncé', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(8, 'Avril Lavinge', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(9, 'Lauryn Hill', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(10, 'Aaliyah', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(11, 'Fergie', 1);
+INSERT INTO Contents.tblArtists(artistID, artistName, albumID) VALUES(12, 'John Legend', 1);
 
 SET IDENTITY_INSERT Contents.tblArtists OFF;
 
