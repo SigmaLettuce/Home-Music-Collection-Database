@@ -2,6 +2,8 @@ use HomeMusicDatabase;
 
 SET IDENTITY_INSERT Contents.tblAlbums ON;
 
+-- Albums published by bands
+
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(1, 'System Of A Down', 'Alternative Metal', '19980630', 1);
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(2, 'Toxicity', 'Alternative Metal', '20010813', 2);
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(3, 'Hypnotize', 'Alternative Metal', '20051122', 1);
@@ -33,9 +35,39 @@ INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, for
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(29, 'Ten', 'Grunge', '19910827', 2);
 INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(30, 'Vs.', 'Grunge', '19931019', 1);
 
+-- Albums published by solo artists
+
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(31, 'Justified', 'R&B', '20021105', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(32, 'Confessions', 'R&B', '20040224', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(33, 'Songs in A Minor', 'R&B', '20010201', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(34, 'The College Dropout', 'Hip-Hop', '20040210', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(35, 'Stripped', 'Pop', '20021119', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(36, 'Back to Bedlam', 'Pop Rock', '20040523', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(37, 'Dangerously in Love', 'R&B', '20030624', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(38, 'Let Go', 'Pop Rock', '20020902', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(39, 'FutureSex/LoveSounds', 'Pop/R&B', '20060908', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(40, 'The Miseducation of Lauryn Hill', 'R&B', '19980825', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(41, 'BDay', 'R&B', '20060904', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(42, 'Aaliyah', 'R&B', '20010319', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(43, 'The Dutchess', 'Pop', '20060919', 1);
+INSERT INTO Contents.tblAlbums(albumID, albumName, genreName, dateOfRelease, formatID) VALUES(44, 'Get Lifted', 'R&B', '20041228', 1);
+
 SET IDENTITY_INSERT Contents.tblAlbums OFF;
 
 SET IDENTITY_INSERT Contents.tblArtists ON;
+
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(1, 'Justin Timberlake', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(2, 'Usher', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(3, 'Alicia Keys', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(4, 'Kanye West', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(5, 'Christina Augilera', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(6, 'James Blunt', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(7, 'Beyoncé', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(8, 'Avril Lavinge', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(9, 'Lauryn Hill', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(10, 'Aaliyah', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(11, 'Fergie', 1);
+INSERT INTO Contents.tblBands(bandID, bandName, albumID) VALUES(12, 'John Legend', 1);
 
 SET IDENTITY_INSERT Contents.tblArtists OFF;
 
