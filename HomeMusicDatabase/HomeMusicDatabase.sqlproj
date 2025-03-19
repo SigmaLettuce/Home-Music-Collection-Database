@@ -62,4 +62,7 @@
     <None Include="SQLScripts\create.sql" />
     <None Include="SQLScripts\load.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLScripts\drop.sql" />
+  </ItemGroup>
 </Project>
