@@ -29,8 +29,7 @@ CREATE TABLE Contents.tblBands (
 CREATE TABLE Properties.tblFormat (
 	formatID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	formatName VARCHAR(10) NOT NULL,
-	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID),
-	FOREIGN KEY (albumID) REFERENCES Contents.tblAlbums (albumID) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID)
 );
 
 CREATE TABLE Properties.tblStorageRoom (

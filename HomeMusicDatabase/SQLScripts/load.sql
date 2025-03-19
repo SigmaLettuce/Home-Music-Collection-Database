@@ -85,7 +85,9 @@ SET IDENTITY_INSERT Contents.tblBands OFF;
 
 SET IDENTITY_INSERT Properties.tblFormat ON;
 
-INSERT INTO Properties.tblFormat(formatID, formatName, roomID, albumID) VALUES(1, 'CD', 1);
+INSERT INTO Properties.tblFormat(formatID, formatName, roomID) VALUES(1, 'CD', 1);
+INSERT INTO Properties.tblFormat(formatID, formatName, roomID) VALUES(2, 'DVD', 1);
+INSERT INTO Properties.tblFormat(formatID, formatName, roomID) VALUES(3, 'Vinyl', 1);
 
 SET IDENTITY_INSERT Properties.tblFormat OFF;
 
