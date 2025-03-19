@@ -4,7 +4,7 @@ GO
 
 CREATE Schema Properties;
 GO
-
+ 
 CREATE TABLE Contents.tblAlbums (
 	albumID INT(1) NOT NULL,
 	albumName VARCHAR(255) NOT NULL,

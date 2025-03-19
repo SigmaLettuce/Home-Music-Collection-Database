@@ -93,6 +93,20 @@ SET IDENTITY_INSERT Properties.tblFormat OFF;
 
 SET IDENTITY_INSERT Properties.tblStorageRoom ON;
 
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(1, 'Living Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(2, 'Bedroom');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(3, 'Bathroom');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(4, 'Dining Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(5, 'Study Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(6, 'Garage');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(7, 'Basement');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(8, 'Attic');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(9, 'Hallway');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(10, 'Guest Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(11, 'Laundry Room');;
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(12, 'Storage Shed');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(13, 'Library');
+
 SET IDENTITY_INSERT Properties.tblStorageRoom OFF;
 
 SET IDENTITY_INSERT Properties.tblShelfInfo ON;
