@@ -94,22 +94,43 @@ SET IDENTITY_INSERT Properties.tblStorageRoom ON;
 
 INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(1, 'Living Room');
 INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(2, 'Bedroom');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(3, 'Bathroom');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(4, 'Dining Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(5, 'Study Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(6, 'Garage');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(7, 'Basement');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(8, 'Attic');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(9, 'Hallway');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(10, 'Guest Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(11, 'Laundry Room');;
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(12, 'Storage Shed');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(13, 'Library');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(3, 'Dining Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(4, 'Study Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(5, 'Garage');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(6, 'Basement');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(7, 'Attic');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(8, 'Hallway');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(9, 'Guest Room');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(10, 'Laundry Room');;
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(11, 'Storage Shed');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(12, 'Library');
 
 SET IDENTITY_INSERT Properties.tblStorageRoom OFF;
 
 SET IDENTITY_INSERT Properties.tblShelfInfo ON;
 
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', );
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '1A', 1);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '2A', 1);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '3A', 1);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '4A', 1);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '5A', 1);
+
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '1B', 2);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '2B', 2);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '3B', 2);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '4B', 2);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '5B', 2);
+
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '1C', 3);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '2C', 3);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '3C', 3);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '4C', 3);
+
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '1D', 4);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '2D', 4);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '3D', 4);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '4D', 4);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '5D', 4);
+
 
 SET IDENTITY_INSERT Properties.tblShelfInfo OFF;

@@ -36,7 +36,7 @@ CREATE TABLE Properties.tblStorageRoom (
 );
 
 CREATE TABLE Properties.tblShelfInfo (
-	shelfTag CHAR(1) PRIMARY KEY NOT NULL,
-	shelfRow INT IDENTITY(1,1) NOT NULL,
+	shelfTag VARCHAR(1) PRIMARY KEY NOT NULL,
+	shelfRow VARCHAR(2) NOT NULL,
 	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID) ON DELETE CASCADE ON UPDATE CASCADE
 );
