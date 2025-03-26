@@ -11,7 +11,6 @@ CREATE TABLE Contents.tblAlbums (
 	genreName VARCHAR(255) NOT NULL,
 	dateOfRelease DATE NOT NULL,
 	FOREIGN KEY (formatID) REFERENCES Properties.tblFormat (formatID) ON DELETE CASCADE ON UPDATE CASCADE
-
 );
 
 CREATE TABLE Contents.tblArtists (
@@ -28,13 +27,12 @@ CREATE TABLE Contents.tblBands (
 
 CREATE TABLE Properties.tblFormat (
 	formatID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
-	formatName VARCHAR(10) NOT NULL,
-	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID)
+	formatName VARCHAR(10) NOT NULL
 );
 
 CREATE TABLE Properties.tblStorageRoom (
 	roomID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
-	roomName VARCHAR(20) NOT NULL,
+	roomName VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Properties.tblShelfInfo (
