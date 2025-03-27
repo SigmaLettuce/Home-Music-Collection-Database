@@ -98,12 +98,6 @@ INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(3, 'Dining Room')
 INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(4, 'Study Room');
 INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(5, 'Garage');
 INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(6, 'Basement');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(7, 'Attic');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(8, 'Hallway');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(9, 'Guest Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(10, 'Laundry Room');;
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(11, 'Storage Shed');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(12, 'Library');
 
 SET IDENTITY_INSERT Properties.tblStorageRoom OFF;
 
@@ -132,5 +126,18 @@ INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '3D'
 INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '4D', 4);
 INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '5D', 4);
 
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '1E', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '2E', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '3E', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '4E', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '5E', 5);
+
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '1F', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '2F', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '3F', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '4F', 5);
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '5F', 5);
+
+INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('G', '1G', 6);
 
 SET IDENTITY_INSERT Properties.tblShelfInfo OFF;

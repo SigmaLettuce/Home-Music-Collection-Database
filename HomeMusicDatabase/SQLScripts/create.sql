@@ -16,12 +16,12 @@ CREATE TABLE Contents.tblAlbums (
 );
 
 CREATE TABLE Contents.tblArtists (
-	artistID INT IDENTITY(1,1) PRIMARY KEY NULL,
+	artistID INT IDENTITY(1,1) PRIMARY KEY,
 	artistName VARCHAR(255) NOT NULL,
 );
 
 CREATE TABLE Contents.tblBands (
-	bandID INT IDENTITY(1,1) PRIMARY KEY NULL,
+	bandID INT IDENTITY(1,1) PRIMARY KEY,
 	bandName VARCHAR(255) NOT NULL,
 );
 
@@ -36,7 +36,7 @@ CREATE TABLE Properties.tblStorageRoom (
 );
 
 CREATE TABLE Properties.tblShelfInfo (
-	shelfTag VARCHAR(1) PRIMARY KEY NOT NULL,
+	shelfTag VARCHAR(1) NOT NULL,
 	shelfRow VARCHAR(2) NOT NULL,
 	FOREIGN KEY (roomID) REFERENCES Properties.tblStorageRoom (roomID) ON DELETE CASCADE ON UPDATE CASCADE
 );

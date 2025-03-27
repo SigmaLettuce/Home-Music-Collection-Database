@@ -1,0 +1,2 @@
+SELECT genreName
+FROM tblAlbums;

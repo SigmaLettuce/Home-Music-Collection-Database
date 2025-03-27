@@ -65,4 +65,11 @@
   <ItemGroup>
     <None Include="SQLScripts\drop.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLScripts\qryAllArtists.sql" />
+    <None Include="SQLScripts\qryAllGenres.sql" />
+    <None Include="SQLScripts\qryArtists.sql" />
+    <None Include="SQLScripts\qryBands.sql" />
+    <None Include="SQLScripts\qryReleaseDate.sql" />
+  </ItemGroup>
 </Project>

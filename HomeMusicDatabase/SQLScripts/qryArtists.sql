@@ -1,0 +1,2 @@
+SELECT artistName
+FROM tblArtists;                                     
