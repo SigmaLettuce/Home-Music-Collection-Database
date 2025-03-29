@@ -6,7 +6,7 @@ CREATE Schema Properties;
 GO
  
 CREATE TABLE Contents.tblAlbums (
-	albumID INT(1) NOT NULL,
+	albumID INT IDENTITY(1,1) NOT NULL,
 	albumName VARCHAR(255) NOT NULL,
 	genreName VARCHAR(255) NOT NULL,
 	dateOfRelease DATE NOT NULL,
@@ -19,12 +19,12 @@ CREATE TABLE Contents.tblAlbums (
 
 CREATE TABLE Contents.tblArtists (
 	artistID INT IDENTITY(1,1) PRIMARY KEY,
-	artistName VARCHAR(255) NOT NULL,
+	artistName VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Contents.tblBands (
 	bandID INT IDENTITY(1,1) PRIMARY KEY,
-	bandName VARCHAR(255) NOT NULL,
+	bandName VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Properties.tblFormat (
