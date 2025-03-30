@@ -1,6 +1,6 @@
 
 CREATE Schema Contents;
-GO
+GO 
 
 CREATE Schema Properties;
 GO
