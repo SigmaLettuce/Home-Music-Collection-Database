@@ -59,88 +59,57 @@ SET IDENTITY_INSERT Contents.tblAlbums OFF;
 
 SET IDENTITY_INSERT Contents.tblArtists ON;
 
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(1, 'Justin Timberlake');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(2, 'Usher');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(3, 'Alicia Keys');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(4, 'Kanye West');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(5, 'Christina Augilera');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(6, 'James Blunt');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(7, 'Beyoncé');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(8, 'Avril Lavinge');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(9, 'Lauryn Hill');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(10, 'Aaliyah');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(11, 'Fergie');
-INSERT INTO Contents.tblArtists(artistID, artistName) VALUES(12, 'John Legend');
+INSERT INTO Contents.tblArtists(artistID, artistName) 
+VALUES
+(1, 'Justin Timberlake'),
+(2, 'Usher'),
+(3, 'Alicia Keys'),
+(4, 'Kanye West'),
+(5, 'Christina Augilera'),
+(6, 'James Blunt'),
+(7, 'Beyoncé'),
+(8, 'Avril Lavinge'),
+(9, 'Lauryn Hill'),
+(10, 'Aaliyah'),
+(11, 'Fergie'),
+(12, 'John Legend');
 
 SET IDENTITY_INSERT Contents.tblArtists OFF;
 
 SET IDENTITY_INSERT Contents.tblBands ON;
 
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(1, 'System Of A Down');
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(2, 'Linkin Park');
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(3, 'Metallica');
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(4, 'Slayer');
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(5, 'Green Day');
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(6, 'Nirvana');
-INSERT INTO Contents.tblBands(bandID, bandName) VALUES(7, 'Pearl Jam');
+INSERT INTO Contents.tblBands(bandID, bandName)
+VALUES
+(1, 'System Of A Down'),
+(2, 'Linkin Park'),
+(3, 'Metallica'),
+(4, 'Slayer'),
+(5, 'Green Day'),
+(6, 'Nirvana'),
+(7, 'Pearl Jam');
 
 SET IDENTITY_INSERT Contents.tblBands OFF;
 
 SET IDENTITY_INSERT Properties.tblFormat ON;
 
-INSERT INTO Properties.tblFormat(formatID, formatName) VALUES(1, 'CD');
-INSERT INTO Properties.tblFormat(formatID, formatName) VALUES(2, 'CD-DA');
+INSERT INTO Properties.tblFormat(formatID, formatName) 
+VALUES
+(1, 'CD'),
+(2, 'CD-DA');
 
 SET IDENTITY_INSERT Properties.tblFormat OFF;
 
 SET IDENTITY_INSERT Properties.tblStorageRoom ON;
 
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(1, 'Living Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(2, 'Bedroom');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(3, 'Dining Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(4, 'Study Room');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(5, 'Garage');
-INSERT INTO Properties.tblStorageRoom(roomID, roomName) VALUES(6, 'Basement');
+INSERT INTO Properties.tblStorageRoom(roomID, roomName)
+VALUES
+(1, 'Living Room'),
+(2, 'Bedroom'),
+(3, 'Dining Room'),
+(4, 'Study Room'),
+(5, 'Garage'),
+(6, 'Basement');
 
 SET IDENTITY_INSERT Properties.tblStorageRoom OFF;
 
-SET IDENTITY_INSERT Properties.tblShelfInfo ON;
 
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '1A', 1);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '2A', 1);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '3A', 1);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '4A', 1);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('A', '5A', 1);
-
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '1B', 2);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '2B', 2);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '3B', 2);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '4B', 2);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('B', '5B', 2);
-
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '1C', 3);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '2C', 3);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '3C', 3);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('C', '4C', 3);
-
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '1D', 4);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '2D', 4);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '3D', 4);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '4D', 4);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('D', '5D', 4);
-
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '1E', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '2E', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '3E', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '4E', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('E', '5E', 5);
-
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '1F', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '2F', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '3F', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '4F', 5);
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('F', '5F', 5);
-
-INSERT INTO Properties.tblShelfInfo(shelfTag, shelfRow, roomID) VALUES('G', '1G', 6);
-
-SET IDENTITY_INSERT Properties.tblShelfInfo OFF;
