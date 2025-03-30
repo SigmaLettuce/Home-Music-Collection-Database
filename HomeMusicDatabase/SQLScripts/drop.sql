@@ -1,6 +1,7 @@
 
 DROP TABLE IF EXISTS Contents.tblAlbums;
-DROP TABLE IF EXISTS Properties.tblShelfInfo;
+DROP TABLE IF EXISTS Properties.tblShelf;
+DROP TABLE IF EXISTS Properties.tblRow;
 DROP TABLE IF EXISTS Contents.tblArtists;
 DROP TABLE IF EXISTS Contents.tblBands;
 DROP TABLE IF EXISTS Properties.tblFormat;
