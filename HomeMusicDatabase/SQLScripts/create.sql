@@ -6,7 +6,6 @@ CREATE Schema Properties;
 GO
  
 
-
 CREATE TABLE Contents.tblArtists (
 	artistID INT IDENTITY(1,1) PRIMARY KEY,
 	artistName VARCHAR(255) NOT NULL

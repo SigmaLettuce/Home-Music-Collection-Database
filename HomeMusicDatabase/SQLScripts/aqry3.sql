@@ -1,5 +1,5 @@
-SELECT B.bandName, a.albumName, a.dateOfRelease
-FROM tblAlbums as a, tblRow as r, tblBands as B
+SELECT B.bandName as Bands, a.albumName as Albums, a.dateOfRelease as 'Date Of Release'
+FROM Contents.tblAlbums as a, Properties.tblRow as r, Contents.tblBands as B
 RIGHT JOIN tblRow 
 ON a.shelfRow = r.shelfRow
 RIGHT JOIN tblBands

@@ -1,2 +1,5 @@
-SELECT a.artistName as Artists, b.bandName as Bands
-FROM Contents.tblArtists as a, Contents.tblBands as b;
+SELECT bandName as 'All Artists'
+FROM Contents.tblBands
+UNION
+SELECT artistName 
+FROM Contents.tblArtists;

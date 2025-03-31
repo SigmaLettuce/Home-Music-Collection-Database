@@ -73,10 +73,14 @@
     <None Include="SQLScripts\sqry5.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="SQLScripts\aqry1.sql" />
-    <Build Include="SQLScripts\aqry2.sql" />
-    <Build Include="SQLScripts\aqry3.sql" />
-    <Build Include="SQLScripts\aqry4.sql" />
-    <Build Include="SQLScripts\aqry5.sql" />
+    <None Include="SQLScripts\aqry1.sql" />
+    <None Include="SQLScripts\aqry2.sql" />
+    <None Include="SQLScripts\aqry3.sql" />
+    <None Include="SQLScripts\aqry4.sql" />
+    <None Include="SQLScripts\aqry5.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLScripts\cqry1.sql" />
+    <None Include="SQLScripts\cqry2.sql" />
   </ItemGroup>
 </Project>
