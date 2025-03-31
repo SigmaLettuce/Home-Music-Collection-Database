@@ -19,7 +19,7 @@ CREATE TABLE Contents.tblBands (
 
 CREATE TABLE Properties.tblFormat (
 	  formatID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
-	formatName VARCHAR(10) NOT NULL
+	  formatName VARCHAR(15) NOT NULL
 );
 
 CREATE TABLE Properties.tblStorageRoom (
@@ -35,6 +35,7 @@ CREATE TABLE Properties.tblShelf (
 
 CREATE TABLE Properties.tblRow (
 	shelfRow VARCHAR(2) PRIMARY KEY NOT NULL,
+	shelfTag VARCHAR(1) NOT NULL,
 	FOREIGN KEY (shelfTag) REFERENCES Properties.tblShelf (shelfTag) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
@@ -46,9 +47,9 @@ CREATE TABLE Contents.tblAlbums (
 	formatID INT NOT NULL,
 	artistID INT,
 	bandID INT,
-	roomID INT NOT NULL,
-	shelfTag VARCHAR(1) NOT NULL,
-	shelfRow VARCHAR(2) NOT NULL,
+	roomID INT,
+	shelfTag VARCHAR(1),
+	shelfRow VARCHAR(2),
 	FOREIGN KEY (formatID) REFERENCES Properties.tblFormat (formatID) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	FOREIGN KEY (artistID) REFERENCES Contents.tblArtists (artistID) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	FOREIGN KEY (bandID) REFERENCES Contents.tblBands (bandID) ON DELETE NO ACTION ON UPDATE NO ACTION,

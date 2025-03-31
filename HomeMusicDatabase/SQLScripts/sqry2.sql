@@ -1,2 +1,2 @@
-SELECT genreName
-FROM tblAlbums;
+SELECT genreName as Genres
+FROM Contents.tblAlbums;

@@ -1,2 +1,2 @@
-SELECT bandName
-FROM tblBands;                                 
+SELECT bandName as Bands
+FROM Contents.tblBands;                                 

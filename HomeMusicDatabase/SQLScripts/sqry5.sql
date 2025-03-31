@@ -1,2 +1,2 @@
-SELECT albumName, dateOfRelease
-FROM tblAlbums;
+SELECT albumName as Albums, dateOfRelease as 'Date Of Release'
+FROM Contents.tblAlbums;

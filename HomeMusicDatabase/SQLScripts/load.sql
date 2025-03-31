@@ -117,8 +117,6 @@ VALUES
 SET IDENTITY_INSERT Properties.tblStorageRoom OFF;
 
 
-SET IDENTITY_INSERT Properties.tblShelf ON;
-
 INSERT INTO Properties.tblShelf(shelfTag, roomID)
 VALUES
 ('A', 1),
@@ -129,10 +127,6 @@ VALUES
 ('F', 5),
 ('G', 6);
 
-SET IDENTITY_INSERT Properties.tblShelf OFF;
-
-
-SET IDENTITY_INSERT Properties.tblRow ON;
 
 INSERT INTO Properties.tblRow(shelfRow, shelfTag)
 VALUES
@@ -172,5 +166,3 @@ VALUES
 ('5F', 'F'),
 
 ('1G', 'G');
-
-SET IDENTITY_INSERT Properties.tblRow OFF;

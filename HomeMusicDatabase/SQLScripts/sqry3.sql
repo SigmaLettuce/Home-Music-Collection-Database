@@ -1,2 +1,2 @@
-SELECT artistName
-FROM tblArtists;                                     
+SELECT artistName as Artists
+FROM Contents.tblArtists;                                     
