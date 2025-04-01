@@ -9,8 +9,7 @@
     <ProjectGuid>{f65bbe5e-c519-40e0-a568-cf603b99b062}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>HomeMusicDatabase</RootNamespace>
     <AssemblyName>HomeMusicDatabase</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -61,6 +59,15 @@
   <ItemGroup>
     <None Include="SQLScripts\create.sql" />
     <None Include="SQLScripts\load.sql" />
+    <None Include="SQLScripts\aqry2.sql" />
+    <None Include="SQLScripts\aqry3.sql" />
+    <None Include="SQLScripts\aqry4.sql" />
+    <None Include="SQLScripts\aqry5.sql" />
+    <None Include="SQLScripts\cqry1.sql" />
+    <None Include="SQLScripts\cqry2.sql" />
+    <None Include="SQLScripts\cqry3.sql" />
+    <None Include="SQLScripts\cqry4.sql" />
+    <None Include="SQLScripts\cqry5.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLScripts\drop.sql" />
@@ -74,13 +81,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLScripts\aqry1.sql" />
-    <None Include="SQLScripts\aqry2.sql" />
-    <None Include="SQLScripts\aqry3.sql" />
-    <None Include="SQLScripts\aqry4.sql" />
-    <None Include="SQLScripts\aqry5.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SQLScripts\cqry1.sql" />
-    <None Include="SQLScripts\cqry2.sql" />
   </ItemGroup>
 </Project>

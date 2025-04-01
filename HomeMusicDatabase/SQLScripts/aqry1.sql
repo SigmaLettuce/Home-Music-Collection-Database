@@ -1,7 +1,5 @@
-SELECT a.shelfRow as 'Shelf Rows', a.shelfTag as 'Shelf'
-FROM Contents.tblAlbums as a, Properties.tblRow as r
-LEFT JOIN tblAlbums ON 
-r.shelfRow = a.shelfRow
-WHERE shelfRow BETWEEN '1E' and '3E'
-and (a.formatID = 2)
-ORDER BY 1, 2;
+SELECT a.albumName as Albums, a.shelfTag as Shelf, a.shelfRow as 'Shelf Rows'
+FROM Contents.tblAlbums as a
+WHERE a.shelfRow LIKE '_A'
+OR (a.shelfRow LIKE '_D' OR a.shelfRow LIKE '_F')
+ORDER BY a.albumName, a.shelfTag, a.shelfRow;

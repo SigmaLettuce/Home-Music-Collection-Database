@@ -1,6 +1,8 @@
-SELECT S.roomName
-FROM tblAlbums as a, tblStorageRoom as S
-RIGHT JOIN tblStorageRoom
-ON a.roomID = S.roomID
-WHERE S.roomID BETWEEN 5 AND 6
-ORDER BY 1;
+﻿SELECT tblAlbums.albumName as Albums, tblStorageRoom.roomName as Rooms
+FROM Contents.tblAlbums
+LEFT JOIN Properties.tblStorageRoom
+ON tblAlbums.roomID = tblStorageRoom.roomID
+WHERE tblAlbums.roomID BETWEEN 3 AND 6
+
+
+-- Only showing discs located in the dining room, study room, garage and basement. The discs are identified by all the artists.

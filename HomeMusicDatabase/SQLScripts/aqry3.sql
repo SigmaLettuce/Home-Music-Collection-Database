@@ -1,9 +1,8 @@
-SELECT B.bandName as Bands, a.albumName as Albums, a.dateOfRelease as 'Date Of Release'
-FROM Contents.tblAlbums as a, Properties.tblRow as r, Contents.tblBands as B
-RIGHT JOIN tblRow 
-ON a.shelfRow = r.shelfRow
-RIGHT JOIN tblBands
-ON a.bandID = B.bandID
-WHERE a.bandID = 1
-and (dateOfRelease BETWEEN '19980629' and '20021127')
-ORDER BY 1,2,3;
+﻿SELECT tblAlbums.albumName as Albums, tblAlbums.genreName as Genres, tblBands.bandName as Bands, tblArtists.artistName as Artists
+FROM Contents.tblAlbums
+LEFT JOIN Contents.tblBands 
+ON tblAlbums.bandID = tblBands.bandID
+LEFT JOIN Contents.tblArtists
+ON tblAlbums.artistID = tblArtists.artistID
+WHERE tblAlbums.dateOfRelease BETWEEN '19991231' AND '20051231'
+ORDER BY tblAlbums.albumName asc, tblAlbums.genreName asc, tblBands.bandName asc, tblArtists.artistName asc

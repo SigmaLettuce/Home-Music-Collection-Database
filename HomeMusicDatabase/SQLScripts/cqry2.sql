@@ -1,8 +1,4 @@
-SELECT COUNT (R.shelfRow) as 'Total Shelf Rows', s.shelfTag, S.roomName
-FROM tblRow as R, tblShelf as s, tblStorageRoom as S
-RIGHT JOIN tblShelf
-ON R.shelfTag = s.shelfTag
-RIGHT JOIN tblStorageRoom
-ON s.roomID = S.roomID
-GROUP BY S.roomName 
-
+﻿SELECT COUNT(tblAlbums.albumName) as 'Total Publishing', YEAR(tblAlbums.dateOfRelease) as 'Publishing Years'
+FROM Contents.tblAlbums
+GROUP BY YEAR(tblAlbums.dateOfRelease)
+ORDER BY 'Total Publishing' desc, YEAR(tblAlbums.dateOfRelease) desc;

@@ -1,6 +1,4 @@
-SELECT COUNT (a.albumID) as 'Collection Total', a.genreName, a.shelfRow, a.shelfTag
-FROM Contents.tblAlbums as a, Properties.tblRow as r, Contents.tblBands as B
-RIGHT JOIN tblRow
-ON a.shelfRow = r.shelfRow
-WHERE genreName LIKE '%Rock'
-GROUP BY a.genreName;
+﻿SELECT COUNT(tblAlbums.genreName) as 'Total Genres', tblAlbums.genreName as Genres
+FROM Contents.tblAlbums
+GROUP BY tblAlbums.genreName
+ORDER BY 'Total Genres', tblAlbums.genreName;
