@@ -1,3 +1,5 @@
+use HomeMusicDatabase;
+
 SET IDENTITY_INSERT Contents.tblArtists ON;
 
 INSERT INTO Contents.tblArtists(artistID, artistName) 
@@ -8,7 +10,7 @@ VALUES
 (4, 'Kanye West'),
 (5, 'Christina Augilera'),
 (6, 'James Blunt'),
-(7, 'Beyoncé'),
+(7, 'BeyoncÃ©'),
 (8, 'Avril Lavinge'),
 (9, 'Lauryn Hill'),
 (10, 'Aaliyah'),
@@ -143,8 +145,8 @@ VALUES
 (26, 'Nevermind', 'Grunge', '19910924', 2, NULL, 6, 3, 'F', '1F'),
 (27, 'In Utero', 'Grunge', '19930921', 1, NULL, 6, 6, 'F', '2F'),
 (28, 'Bleach', 'Grunge', '19890615', 1, NULL, 6, 1, 'F', '3F'),
-(29, 'Ten', 'Grunge', '19910827', 2, NULL, 6, 2, 'G', '1G'),
-(30, 'Vs.', 'Grunge', '19931019', 1, NULL, 6, 5, 'G', '1G'),
+(29, 'Ten', 'Grunge', '19910827', 2, NULL, 7, 2, 'G', '1G'),
+(30, 'Vs.', 'Grunge', '19931019', 1, NULL, 7, 5, 'G', '1G'),
 
 -- Albums published by solo artists
 
